@@ -1,4 +1,4 @@
-import 'package:build_flutter_apps/profile_app.dart';
+import 'package:build_flutter_apps/profile_app/profile_app.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {

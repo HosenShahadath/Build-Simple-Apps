@@ -70,7 +70,7 @@ class ProfileApp extends StatelessWidget {
                 IconButton(onPressed: () {}, icon: Icon(Icons.link), color: Colors.blue, tooltip: 'LinkedIn',),
                 IconButton(onPressed: () {}, icon: Icon(Icons.code), color: Colors.black, tooltip: 'GitHub',),
               ],
-            )
+            ),
           ],
         ),
       ),
