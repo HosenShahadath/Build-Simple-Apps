@@ -1,0 +1,2 @@
+C:/Users/Sahadath Hosen/Desktop/Practice/Build-Simple-Apps/android/app/.cxx/Debug/2n4t5o3r/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Sahadath Hosen/Desktop/Practice/Build-Simple-Apps/android/app/.cxx/Debug/2n4t5o3r/x86_64/CMakeFiles/rebuild_cache.dir
