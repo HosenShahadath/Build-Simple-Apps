@@ -1,4 +1,4 @@
-import 'package:build_flutter_apps/profile_app/profile_app.dart';
+import 'package:build_flutter_apps/interest_calculator_app/interest_calculator_app.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ProfileApp(),
+      home: InterestCalculatorApp(),
     );
   }
 }
