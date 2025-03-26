@@ -1,4 +1,5 @@
 import 'package:build_flutter_apps/book_reader_app/book_reader_app.dart';
+import 'package:build_flutter_apps/counter%20app/counter_app.dart';
 import 'package:build_flutter_apps/interest_calculator_app/interest_calculator_app.dart';
 import 'package:build_flutter_apps/tic_tac_toe_game/tic_tac_toe.dart';
 import 'package:build_flutter_apps/todo_app/todo_app.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: TicTacToe(),
+      home: CounterPage(),
     );
   }
 }
