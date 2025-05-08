@@ -9,9 +9,9 @@ class NewsApi {
   Future<void> getNews() async {
     Uri url = Uri.parse(
         "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c63ae7a671d846ae927cbec8715f3829");
-    var response = await http.get(url);
+    dynamic response = await http.get(url);
 
-    var jsonData = jsonDecode(response.body);
+    dynamic jsonData = jsonDecode(response.body);
 
     if (jsonData["status"] == 'ok') {
       jsonData["articles"].forEach((element) {
@@ -30,4 +30,6 @@ class NewsApi {
       });
     }
   }
+
+  
 }
