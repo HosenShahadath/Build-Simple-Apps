@@ -1,5 +1,4 @@
-import 'package:build_flutter_apps/book_reader_app/pdf_reader.dart';
-import 'package:build_flutter_apps/todo_app/todo_screen.dart';
+import 'package:build_flutter_apps/News%20App/screen/news_home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,11 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: PdfReader(),
+      home: NewsHomeScreen(),
     );
   }
 }
