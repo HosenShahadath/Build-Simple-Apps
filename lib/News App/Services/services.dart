@@ -30,6 +30,33 @@ class NewsApi {
       });
     }
   }
+}
 
-  
+class CategoryNews {
+  List<NewsModel> dataStore = [];
+
+  Future<void> getNews(String category) async {
+    Uri url = Uri.parse(
+        "https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=c63ae7a671d846ae927cbec8715f3829");
+    dynamic response = await http.get(url);
+
+    dynamic jsonData = jsonDecode(response.body);
+
+    if (jsonData["status"] == 'ok') {
+      jsonData["articles"].forEach((element) {
+        if (element["urlToImage"] != null &&
+            element["description"] != null &&
+            element["author"] != null &&
+            element["content"] != null) {
+          NewsModel newsModel = NewsModel(
+              title: element['title'],
+              urlToImage: element["urlToImage"],
+              description: element["description"],
+              author: element["author"],
+              content: element["content"]);
+          dataStore.add(newsModel);
+        }
+      });
+    }
+  }
 }
